@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: "recursive"
           fetch-depth: 0
@@ -36,13 +36,13 @@ jobs:
           fi
 
       - name: Checkout libxposed/api
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: libxposed/api
           path: libxposed/api
 
       - name: Checkout libxposed/service
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: libxposed/service
           path: libxposed/service
